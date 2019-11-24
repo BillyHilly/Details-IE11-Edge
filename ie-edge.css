@@ -1,0 +1,76 @@
+/* BOTH IE11 & EDGE ------------------------------------------- */
+.header-primary .nav__global details summary.advisories {
+  padding-left: .75rem !important
+}
+
+html.no-details details>summary:before {
+  content: '' !important;
+  display: none !important
+}
+
+html.no-details details.QandA>summary:before {
+  content: 'Q?' !important;
+  display: block !important
+}
+
+html.no-details #header details>summary:after {
+  content: '\f0d7 ' !important;
+  font-family: "Font Awesome\ 5 Pro";
+  font-weight: 900;
+  display: none;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  white-space: nowrap
+}
+
+html.no-details #header details>summary svg {
+  padding-left: .25em
+}
+
+details[open=open] summary *,
+details[open] summary~* {
+  animation: none !important
+}
+
+html.no-details .nav__page .list__accordions li>a,
+html.no-details .nav__page .list__accordions li>details summary,
+html.no-details.news main .news-filter-nav details>summary {
+  font-size: .8rem !important
+}
+
+/* IE11 ONLY ------------------------------------------------- */
+_:-ms-fullscreen,
+:root .header-primary .nav__global .list__accordions>li>details>summary,
+.header-primary .nav__global .list__accordions>li>a {
+  font-size: .8rem;
+  margin-right: -.75rem
+}
+
+_:-ms-fullscreen,
+:root .header-primary .nav__global .list__accordions li .details_shim_open nav {
+  box-shadow: 0 5px 10px hsla(215, 89%, 4%, .05), 0 15px 40px hsla(215, 89%, 14%, .2)
+}
+
+_:-ms-fullscreen,
+:root html.news.no-details>body>#doc-wrapper>.nav__site {
+  height: 3rem !important;
+  position: fixed !important
+}
+
+_:-ms-fullscreen,
+:root html.news.no-details>body>#doc-wrapper>.news-banner {
+  margin-top: 3rem !important
+}
+
+_:-ms-fullscreen,
+:root html.no-details .content-grid .leftSidebar .nav__page,
+:root html.no-details .content-grid .leftSidebar .nav__page {
+  position: relative
+}
+
+_:-ms-fullscreen,
+:root html.no-details .card--mountains footer:before {
+  background-size: 200% !important
+}
